@@ -1,6 +1,6 @@
 ## Apache Tomcat 8 Docker image
 
-> This Docker image is based on official Java JRE 1.8 / Alpine image (size: 5mb).
+> This Docker image is based on official Java JRE 1.8 / Alpine image (size: 108mb).
 
 You can run the default command simply:
 ```
