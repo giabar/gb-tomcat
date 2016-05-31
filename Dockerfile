@@ -1,7 +1,7 @@
 FROM java:jre-alpine
 MAINTAINER giabar
 
-ENV TOMCATVER 8.0.33
+ENV TOMCATVER 8.0.35
 RUN wget -O /tmp/tomcat8.tar.gz http://www.apache.org/dist/tomcat/tomcat-8/v${TOMCATVER}/bin/apache-tomcat-${TOMCATVER}.tar.gz &&\
     mkdir /opt &&\
     cd /opt &&\
