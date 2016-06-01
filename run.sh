@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ADMIN_USER=${ADMIN_USER:-admin}
 ADMIN_PASS=${ADMIN_PASS:-tomcat}
 MAX_UPLOAD_SIZE=${MAX_UPLOAD_SIZE:-52428800}
