@@ -1,16 +1,14 @@
-## Apache Tomcat 8 Docker image
+## Apache Tomcat 8.5.6 Docker image
 
-> This Docker image is based on official Java JRE 1.8 / Alpine image (size: 108mb).
+> This Docker image is based on official Apache Tomcat 8.5.6 Alpine image.
 
 You can run the default command simply:
 ```
-docker run -d -p 8080:8080 giabar/gb-docker-tomcat:8-jre8
+docker run -d -p 8080:8080 giabar/gb-tomcat
 ```
 
-This image is configured with a volume at /opt/tomcat/webapps to hold the persisted index data. 
+A VOLUME mount point created at /usr/local/tomcat/webapps
 Use that path if you would like to keep the data in a mounted volume:
 ```
-docker run -d -p 8080:8080 -v /tmp/webapps:/opt/tomcat/webapps giabar/gb-docker-tomcat:8-jre8
+docker run -d -p 8080:8080 -v /data/webapps:/usr/local/tomcat/webapps giabar/gb-tomcat
 ```
-
-This image includes EXPOSE 8080, so standard container linking will make it automatically available to the linked containers.
