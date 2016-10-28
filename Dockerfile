@@ -1,16 +1,9 @@
-FROM java:jre-alpine
-MAINTAINER giabar
+FROM tomcat:8.5.6-jre8-alpine
+MAINTAINER giabar <info@giabar.com>
 
-ENV TOMCATVER 8.5.6
 RUN apk upgrade --update &&\
-    apk add --no-cache bash &&\
-    wget -O /tmp/tomcat8.tar.gz http://www.apache.org/dist/tomcat/tomcat-8/v${TOMCATVER}/bin/apache-tomcat-${TOMCATVER}.tar.gz &&\
-    mkdir /opt &&\
-    cd /opt &&\
-    tar zxf /tmp/tomcat8.tar.gz &&\
-    rm /tmp/tomcat8.tar.gz &&\
-    mv /opt/apache-tomcat* /opt/tomcat
-ADD ./run.sh /usr/local/bin/run
+    apk add --no-cache bash
+ADD ./run /usr/local/bin/run
 EXPOSE 8080
-VOLUME ["/opt/tomcat/webapps"]
+VOLUME ["/usr/local/tomcat/webapps"]
 CMD ["/usr/local/bin/run"]
