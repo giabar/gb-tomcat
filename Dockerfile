@@ -6,4 +6,5 @@ RUN apk upgrade --update &&\
 ADD ./run /usr/local/bin/run
 EXPOSE 8080
 VOLUME ["/usr/local/tomcat/webapps"]
+VOLUME ["/usr/local/tomcat/logs"]
 CMD ["/usr/local/bin/run"]
