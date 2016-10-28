@@ -7,8 +7,11 @@ You can run the default command simply:
 docker run -d -p 8080:8080 giabar/gb-tomcat
 ```
 
-A VOLUME mount point created at /usr/local/tomcat/webapps
-Use that path if you would like to keep the data in a mounted volume:
+VOLUME mount points are created at [/usr/local/tomcat/webapps] and [/usr/local/tomcat/logs]
+Run your container with volume parameter if you want to mount the aboves volumes:
 ```
-docker run -d -p 8080:8080 -v /data/webapps:/usr/local/tomcat/webapps giabar/gb-tomcat
+docker run -d -p 8080:8080 \
+  -v /data/webapps:/usr/local/tomcat/webapps \
+  -v /data/logs:/usr/local/tomcat/logs \
+  giabar/gb-tomcat
 ```
