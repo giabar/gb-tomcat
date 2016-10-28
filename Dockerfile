@@ -1,7 +1,7 @@
 FROM java:jre-alpine
 MAINTAINER giabar
 
-ENV TOMCATVER 8.0.35
+ENV TOMCATVER 8.5.6
 RUN apk upgrade --update &&\
     apk add --no-cache bash &&\
     wget -O /tmp/tomcat8.tar.gz http://www.apache.org/dist/tomcat/tomcat-8/v${TOMCATVER}/bin/apache-tomcat-${TOMCATVER}.tar.gz &&\
