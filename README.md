@@ -15,3 +15,16 @@ docker run -d -p 8080:8080 \
   -v /data/logs:/usr/local/tomcat/logs \
   giabar/gb-tomcat
 ```
+
+Default credentials:
+
+username: myadmin
+password: yourtomcat
+
+
+If you want to specify different credentials:
+
+```
+docker run -d -p 8080:8080 --env ADMIN_USER=myusername --env ADMIN_PASS=mypassword giabar/gb-tomcat
+```
+
