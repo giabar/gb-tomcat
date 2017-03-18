@@ -15,7 +15,7 @@ cat << EOF > /usr/local/tomcat/conf/tomcat-users.xml
   <role rolename="admin-gui"/>
   <role rolename="admin-script"/>
   <role rolename="manager-gui"/>
-  <user username="myadmin" password="yourtomcat" roles="manager-gui,admin-gui,admin-script"/>
+  <user username=${ADMIN_USER} password=${ADMIN_PASS} roles="manager-gui,admin-gui,admin-script"/>
 </tomcat-users>
 EOF
 
