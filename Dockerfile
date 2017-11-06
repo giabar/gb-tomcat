@@ -1,5 +1,5 @@
 FROM tomcat:8.5.16-jre8-alpine
-MAINTAINER giabar <info@giabar.com>
+LABEL maintainer="info@giabar.com"
 
 RUN apk upgrade --update &&\
     apk add --no-cache bash
