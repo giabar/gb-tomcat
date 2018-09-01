@@ -1,6 +1,6 @@
-## Apache Tomcat 8.5.31 Docker image
+## Apache Tomcat 8.5.33 Docker image
 
-> This Docker image is based on official Apache Tomcat 8.5.31 Alpine image.
+> This Docker image is based on official Apache Tomcat 8.5.33 Alpine image.
 
 You can run the default command simply:
 ```
