@@ -1,7 +1,8 @@
-FROM tomcat:8.5.31-jre8-alpine
-LABEL maintainer="info@giabar.com"
+FROM tomcat:8.5.33-jre8-alpine
+LABEL maintainer="GiaBar <giabar@giabar.com>"
 RUN apk add -q --update --no-cache bash &&\
-    rm -rf /var/cache/apk/
+    rm -rf /var/cache/apk/ &&\
+    rm -rf /tmp/*
 ADD ./run /usr/local/bin/run
 EXPOSE 8080
 VOLUME ["/usr/local/tomcat/webapps"]
