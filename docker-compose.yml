@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  limeapp:
+    image: giabar/gb-tomcat
+    ports:
+      - 8080:8080
+    environment:
+      ADMIN_USER: myadmin
+      ADMIN_PASS: yourpassword
+    volumes:
+      - webapps:/usr/local/tomcat/webapps
+      - logs:/usr/local/tomcat/logs
+volumes:
+  webapps:
+  logs:

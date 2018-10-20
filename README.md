@@ -2,6 +2,16 @@
 
 > This Docker image is based on official Apache Tomcat 8.5.33 Alpine image.
 
+
+
+## Try online
+
+You can try that online! Click the below button:
+
+[![Try in PWD](https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png)](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/giabar/gb-tomcat/master/docker-compose.yml)
+
+
+
 You can run the default command simply:
 ```
 docker run -d -p 8080:8080 giabar/gb-tomcat
