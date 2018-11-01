@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-  limeapp:
+  tomcat:
     image: giabar/gb-tomcat
     ports:
       - 8080:8080
