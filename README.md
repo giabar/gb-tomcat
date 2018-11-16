@@ -1,4 +1,4 @@
-## Apache Tomcat 8.5.33 Docker image
+## Apache Tomcat 8.5.35 Docker image
 
 > This Docker image is based on official Apache Tomcat 8.5.35 Alpine image (https://hub.docker.com/_/tomcat/).
 
