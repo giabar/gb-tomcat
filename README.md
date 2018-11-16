@@ -1,6 +1,6 @@
 ## Apache Tomcat 8.5.33 Docker image
 
-> This Docker image is based on official Apache Tomcat 8.5.33 Alpine image.
+> This Docker image is based on official Apache Tomcat 8.5.35 Alpine image (https://hub.docker.com/_/tomcat/).
 
 
 
@@ -35,7 +35,7 @@ docker run \
 Default credentials:
 
 username: myadmin
-password: yourtomcat
+password: yourpassword
 
 
 If you want to specify different credentials:
