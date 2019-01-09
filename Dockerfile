@@ -1,4 +1,4 @@
-FROM tomcat:8.5.35-jre8-alpine
+FROM tomcat:8.5.37-jre8-alpine
 LABEL maintainer="giabar@giabar.com"
 RUN apk add -q --update --no-cache bash &&\
     rm -rf /var/cache/apk/ &&\
